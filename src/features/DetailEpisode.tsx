@@ -45,18 +45,16 @@ const DetailEpisode = ({ character, open, onClose }: DetailEpisodeProps) => {
 
       <DialogContent sx={{ p: 0 }}>
         <Box sx={{ display: "flex", flexDirection: "column" }}>
-          {/* Banner superior */}
-          <Box
-            sx={{
+          <div
+            style={{
               width: "100%",
               height: "128px",
-              backgroundImage: "url('banner.png')",
+              backgroundImage: "url('/banner.png')",
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
           />
 
-          {/* Sección de avatar y nombre */}
           <Box sx={{ px: 3, mt: -4, position: "relative" , bgcolor: '#E6E7E3' }}>
             <Box
               sx={{ display: "flex", alignItems: "flex-end", gap: 2, mb: 3 }}
@@ -89,20 +87,21 @@ const DetailEpisode = ({ character, open, onClose }: DetailEpisodeProps) => {
                     bgcolor: '#fafafa',
                     padding: '16px',
                     borderRadius: '8px',
+                    maxWidth:'136px'
                   }}
                 >
                   <span>Información</span>
-                  <div>
+                  <div className="flex flex-col gap-1 text-sm">
                     <span>Género</span>
                     <span>Masculino</span>
                   </div>
-                  <div>
-                    <span>Género</span>
-                    <span>Masculino</span>
+                  <div className="flex flex-col gap-1 text-sm">
+                    <span>Origen</span>
+                    <span>Tierra (C-137)</span>
                   </div>
-                  <div>
-                    <span>Género</span>
-                    <span>Masculino</span>
+                  <div className="flex flex-col gap-1 text-sm">
+                    <span>Estado</span>
+                    <span>Vivo</span>
                   </div>
                 </Box>
                 <Box
@@ -113,19 +112,20 @@ const DetailEpisode = ({ character, open, onClose }: DetailEpisodeProps) => {
                     bgcolor: '#fafafa',
                     padding: '16px',
                     borderRadius: '8px',
+                    width: '100%'
                   }}
                 >
                   <div>Episodios</div>
-                  <div>
-                    <span>S01 E06</span>
+                  <div className="flex gap-3">
+                    <span className="text-[#808C73]">S01 E06</span>
                     <span>Piloto</span>
                   </div>
-                  <div>
-                    <span>S01 E06</span>
+                  <div className="flex gap-3">
+                    <span className="text-[#808C73]">S01 E06</span>
                     <span>Rick potion</span>
                   </div>
-                  <div>
-                    <span>S01 E04</span>
+                  <div className="flex gap-3">
+                    <span className="text-[#808C73]">S01 E04</span>
                     <span>M. Night Shaym-Aliens</span>
                   </div>
                 </Box>
