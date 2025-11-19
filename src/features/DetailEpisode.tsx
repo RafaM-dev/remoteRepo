@@ -45,6 +45,7 @@ const DetailEpisode = ({ character, open, onClose }: DetailEpisodeProps) => {
 
       <DialogContent sx={{ p: 0 }}>
         <Box sx={{ display: "flex", flexDirection: "column" }}>
+          
           <div
             style={{
               width: "100%",
